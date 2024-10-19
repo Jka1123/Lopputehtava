@@ -6,13 +6,13 @@ import 'ag-grid-community/styles/ag-theme-material.css';
 const CustomerList = () => {
   const [customers, setCustomers] = useState([]);
   const [columnDefs] = useState([
-    { field: 'firstname', sortable: true, filter: true },
-    { field: 'lastname', sortable: true, filter: true },
-    { field: 'streetaddress', sortable: true, filter: true },
-    { field: 'postcode', sortable: true, filter: true },
-    { field: 'city', sortable: true, filter: true },
-    { field: 'email', sortable: true, filter: true },
-    { field: 'phone', sortable: true, filter: true },
+    {field:'firstname'},
+    {field: 'lastname'},
+    {field: 'streetaddress'},
+    {field: 'postcode'},
+    {field: 'city'},
+    {field: 'email'},
+    {field: 'phone'},
   ]);
 
   useEffect(() => {
