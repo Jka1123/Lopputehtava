@@ -11,10 +11,22 @@ const TrainingList = () => {
     {
         field: 'date',
         valueFormatter: params => dayjs(params.value).format('DD.MM.YYYY HH:mm'),
+        filter: true,
+        floatingFilter: true,
     },
-    { field: 'duration'},
-    { field: 'activity'},
-    { field: 'customerName', headerName: 'Customer'},
+    { field: 'duration',
+      filter: true,
+      floatingFilter: true,
+    },
+    { field: 'activity',
+      filter: true,
+      floatingFilter: true,
+    },
+    { field: 'customerName',
+      headerName: 'Customer',
+      filter: true,
+      floatingFilter: true,
+    },
   ]);
 
 
